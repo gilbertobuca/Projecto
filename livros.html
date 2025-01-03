@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Biblioteca Virtual</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>Biblioteca Virtual</h1>
+            <nav >
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="livros.html">Livros</a></li>
+                </ul>
+            </nav>
+        </div>
+        <br>
+        <br>
+        
+    <section id="home" class="search-section">
+        <div class="container">
+            <h2>Encontre o seu livro favorito!</h2>
+            <input type="text" id="searchInput" placeholder="Pesquise por título ou autor..." />
+            <button onclick="buscarLivros()">Buscar</button>
+        </div>
+    </section>
+    </header>
+
+        <section id="livros" class="books-section">
+            <div class="container">
+                <h3>Esta é a pagina one encontras os livros disponíveis na nossa biblioteca</h3>
+                <h3> Os livros  aqui representados estão disponíveis para ler e baixar, no formato PDF. Alem disso, os nossos livros estão organizados por categorias, como:
+                    <ul>
+                        <li>Informática</li>
+                        <li>Electricidade</li>
+                        <li>Cultura geral</li>
+                        <li>Diversos</li>
+                    </ul>            
+                </h3>
+                <p></p>
+                <p></p>
+                <h2>Livros Disponíveis</h2>
+                <div id="bookList" class="book-list">
+                    <!-- Livros serão listados aqui -->
+                </div>
+            </div>
+        </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Biblioteca Virtual. All rights reserved.</p>
+            <p> Created by the designer, trader and algoritms developer <a href="G-Mail/gilbertobuca1@gmail.com" target="_blank" rel="no-follow">Gilberto Buca</a> with Gustavo Mungazi, Felina Sassa and Feliciana Mesa</p>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

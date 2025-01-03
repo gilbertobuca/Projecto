@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+body ul li a{
+
+    background-color: #50454575;
+    padding: 5px;
+    margin: 2px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: right;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+body ul li a:hover{
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: underline wavy;
+    background-color: #e68181;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+
+/* Cabeçalho */
+header {
+    background-image: linear-gradient(to right, red, blue, green, yellow, orange);
+    color: white;
+    padding: 10px;
+}
+header img{
+    margin: auto; 
+    width: 99% ;
+    height: 120px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #b35858;
+    font-size: 20px;
+    border-radius: 30px;
+    transition: all 1.5s;
+}
+
+/* Seções */
+section {
+    padding: 50px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Busca */
+.search-section {
+    background: #d1c165;
+    color: #000000;
+    text-align: center;
+    border-radius:20px;
+}
+
+.search-section input {
+    padding: 10px;
+    font-size: 16px;
+    width: 50%;
+    margin-right: 10px;
+}
+
+.search-section input:hover {
+    padding: 15px;
+    border-radius: 60px;
+    transition: all 0.7s;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #bbbbbb;
+    border: none;
+    cursor: pointer;
+
+}
+
+.search-section button:hover {
+    background: #555555;
+    color: whitesmoke;
+    border-radius: 60px;
+    transition: all 0.7s;
+}
+
+/* Livros */
+.books-section {
+    background: #ffffff;
+    border-radius: 10px;
+    color: #000000;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book-item {
+    background: #8a8383;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 2px 4px #0000001a;
+    border-radius: 20px;
+    color: #333;
+}
+.book-item:hover{
+    border-radius: 60px;
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 1s;
+}
+
+.book-item a{
+    text-decoration: none;
+    color: #333;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.book-item a:hover{
+    display: inline;
+    background-color: red;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    border-radius: 8px;
+    transition: all 1s;
+
+}
+
+.book-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.book-item p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Seções Sobre e Contato */
+
+.about-section, .contact-section{
+    color: #000000;
+
+}
+
+form input, form textarea {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: #000000;
+    border-width: 1pt;
+
+}
+
+form input:hover, form textarea:hover {
+    border-radius: 60px;
+    background-color: aliceblue;
+    color: #333;
+    transition: all 0.7s;
+
+}
+
+
+form button {
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555555;
+    color: white;
+    border-radius: 80px;
+    padding: 20px;
+    transition: all 1s;
+
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+   
+    columns: 2;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 0px 5px 0px;
+
+
+
+
+}
+
+footer a:hover{
+    text-decoration: underline;
+    font-size: large;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #b35858;
+    transition: all 1s;
+
+}
+
