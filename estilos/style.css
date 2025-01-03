@@ -78,7 +78,7 @@ header nav ul li a:hover {
     background-color: #b35858;
     font-size: 20px;
     border-radius: 30px;
-    transition: all 1.5s;
+    transition: all 0.5s;
 }
 
 /* Seções */
@@ -109,7 +109,7 @@ section {
 .search-section input:hover {
     padding: 15px;
     border-radius: 60px;
-    transition: all 0.7s;
+    transition: all 0.5s;
 }
 
 .search-section button {
@@ -125,7 +125,7 @@ section {
     background: #555555;
     color: whitesmoke;
     border-radius: 60px;
-    transition: all 0.7s;
+    transition: all 0.5s;
 }
 
 /* Livros */
@@ -145,6 +145,7 @@ section {
     background: #8a8383;
     border: 1px solid #ddd;
     padding: 20px;
+    margin: auto;
     width: 220px;
     box-shadow: 0 2px 4px #0000001a;
     border-radius: 20px;
@@ -206,7 +207,7 @@ form input:hover, form textarea:hover {
     border-radius: 60px;
     background-color: aliceblue;
     color: #333;
-    transition: all 0.7s;
+    transition: all 0.5s;
 
 }
 
@@ -233,8 +234,7 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: 50px;
-   
-    columns: 2;
+    columns: 5;
 }
 
 footer a {
