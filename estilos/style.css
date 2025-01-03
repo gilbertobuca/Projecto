@@ -115,6 +115,7 @@ section {
 .search-section button {
     padding: 10px 20px;
     font-size: 16px;
+    border-radius: 60px;
     background: #bbbbbb;
     border: none;
     cursor: pointer;
@@ -124,7 +125,7 @@ section {
 .search-section button:hover {
     background: #555555;
     color: whitesmoke;
-    border-radius: 60px;
+
     transition: all 0.5s;
 }
 
@@ -216,15 +217,15 @@ form button {
     padding: 10px 20px;
     color: black;
     border: none;
+    padding: 20px;
+    border-radius: 80px;
     cursor: pointer;
 }
 
 form button:hover {
     background: #555555;
     color: white;
-    border-radius: 80px;
-    padding: 20px;
-    transition: all 1s;
+    transition: all 0.5s;
 
 }
 
