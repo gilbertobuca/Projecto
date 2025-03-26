@@ -67,7 +67,9 @@ input#button :hover{
         <h1>Login</h1>
         <form action="testlogin.php" method="POST">
             <input type="email" name="email" placeholder="Email">
+            <br><br>
             <input type="password" name="senha" placeholder="Senha">
+            <br><br>
             <input type="submit" name="submit" id="button" value="Enviar">
         
         </form>
