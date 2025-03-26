@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/form.css" />
 </head>
 <body>
-<form action="" >
+<form action="testlogin.php" method="POST">
     
         <div>
             <h1>Login</h1>

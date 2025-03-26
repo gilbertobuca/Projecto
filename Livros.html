@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -7,101 +5,147 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			body {
+				background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+				color: #fff;
+				overflow-x: hidden;
+			}
+			.button-category {
+				display: inline-flex;
+				align-items: center;
+				gap: 10px;
+				background: linear-gradient(135deg, #ff7e5f, #feb47b);
+				border: none;
+				color: #fff;
+				padding: 15px 30px;
+				margin: 15px;
+				border-radius: 30px;
+				cursor: pointer;
+				font-size: 1.2em;
+				transition: all 0.3s ease, transform 0.4s;
+				text-decoration: none;
+				opacity: 0;
+				transform: translateY(30px);
+				animation: fadeInUp 0.8s forwards;
+				white-space: nowrap;
+			}
+			.button-category i {
+				min-width: 20px;
+			}
+			.button-category:nth-child(1) { animation-delay: 0.2s; }
+			.button-category:nth-child(2) { animation-delay: 0.4s; }
+			.button-category:nth-child(3) { animation-delay: 0.6s; }
+			.button-category:nth-child(4) { animation-delay: 0.8s; }
+			.button-category:nth-child(5) { animation-delay: 1s; }
+			.button-category:nth-child(6) { animation-delay: 1.2s; }
+			.button-category:nth-child(7) { animation-delay: 1.4s; }
+			.button-category:nth-child(8) { animation-delay: 1.6s; }
+			@keyframes fadeInUp {
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+			.button-category:hover {
+				transform: scale(1.1) rotate(1deg);
+				box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+			}
+			#banner h2::after {
+				content: '|';
+				display: inline;
+				animation: blink 0.7s infinite;
+				margin-left: 5px;
+			}
+			@keyframes blink {
+				0%, 50% { opacity: 1; }
+				51%, 100% { opacity: 0; }
+			}
+			#banner h2 {
+				border-right: .15em solid orange;
+				animation: typing 4s steps(60, end) forwards, fadeIn 2s ease-in-out;
+				max-width: 100%;
+				overflow-wrap: break-word;
+			}
+			@keyframes typing {
+				from { width: 0; }
+				to { width: 100%; }
+			}
+			header#header, footer#footer {
+				background: rgba(0, 0, 0, 0.4);
+				border-radius: 0 0 15px 15px;
+				padding: 15px;
+			}
+			.icons a:hover {
+				color: #f39c12;
+				transform: scale(1.2);
+				transition: all 0.3s;
+			}
+			section.container {
+				text-align: center;
+				margin-top: 40px;
+				overflow-wrap: break-word;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
 
-			<!-- Header -->
 			<header id="header">
 				<h1 id="logo"><a href="Principal.html">Biblioteca Virtual</a></h1>
 				<nav id="nav">
 					<ul>
-
 						<li><a href="Principal.html" class="button primary">Home</a></li>
 					</ul>
 				</nav>
 			</header>
 
-			<!-- Banner -->
 			<section id="banner">
 				<div class="content">
 					<header>
-						<h2>Seja bem-vindo .</h2>
-						<p>Aqui poderá ver todas as categorias de livros que temos disponiveis em nossa biblioteca para o estudo, leitura e até para downloads se quiser!</p>
-						<p>Ao clicar na caixa da categoria que quer será directamente levado para a página dos livros daquela categoria</p>
+						<h2>Seja bem-vindo à sua fonte inesgotável de conhecimento e inspiração.</h2>
+						<p>Explore um mundo de sabedoria em diversas categorias de livros, todos cuidadosamente organizados para o seu estudo, leitura prazerosa e acesso fácil a downloads gratuitos.</p>
+						<p>Escolha a área que mais te interessa, clique e descubra novos horizontes através do poder transformador da leitura.</p>
 					</header>
 				</div>
 			</section>
 
-							
-
 			<section class="container">
-
-				<div id="categoria">
-					<p><a href="comunicacao.html">Comunicação Social</a></p>
-				</div>
-
-				<div id="categoria">
-					<p><a href="contabilidade.html">Contabilidade e gestão</a></p>
-				</div>
-
-				<div id="categoria">
-					<p><a href="desenho.html">Desenho e Projecto</a></p>
-				</div>
-
-				<div id="categoria">
-					<p><a href="electricidade.html">Electricidade e instalações eléctricas</a></p>
-				</div>
-
-				<div id="categoria">
-					<p><a href="eletronica.html">Electronica e telecomunicações</a></p>
-				</div>
-
-				<div id="categoria">
-					<p><a href="filosofia.html">filosofia</a></p>
-				</div>
-
-				<div id="categoria">
-					<p><a href="informatica.html">Informática</a></p>
-				</div>
-
-				<div id="categoria">
-					<p><a href="literatura.html">Literatura</a></p>
-				</div>
-
+				<a href="comunicacao.html" class="button-category"><i class="fa-solid fa-comments"></i>Comunicação Social</a>
+				<a href="contabilidade.html" class="button-category"><i class="fa-solid fa-calculator"></i>Contabilidade e Gestão</a>
+				<a href="desenho.html" class="button-category"><i class="fa-solid fa-pencil-ruler"></i>Desenho e Projeto</a>
+				<a href="electricidade.html" class="button-category"><i class="fa-solid fa-bolt"></i>Eletricidade e Instalações Elétricas</a>
+				<a href="eletronica.html" class="button-category"><i class="fa-solid fa-microchip"></i>Eletrônica e Telecomunicações</a>
+				<a href="filosofia.html" class="button-category"><i class="fa-solid fa-brain"></i>Filosofia</a>
+				<a href="informatica.html" class="button-category"><i class="fa-solid fa-laptop-code"></i>Informática</a>
+				<a href="literatura.html" class="button-category"><i class="fa-solid fa-book"></i>Literatura</a>
 			</section>
 
-					
-
-			<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
-					<li><a><span class="label"></span></a></li>
 					<li><a href="https://m.facebook.com" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="https://www.linkedIn.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2f" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://www.linkedin.com" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 					<li><a href="https://www.instagram.com" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 					<li><a href="https://github.com/#hero" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					<li><a span></span></a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; Biblioteca Virtual.Todos os direitos reservados</li>
+					<li>&copy; Biblioteca Virtual. Todos os direitos reservados.</li>
 				</ul>
 			</footer>
 
-
 		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/script.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/script.js"></script>
 
 	</body>
 </html>
