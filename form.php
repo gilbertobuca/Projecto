@@ -14,7 +14,7 @@ include_once('config.php');
     <link rel="stylesheet" href="form.css">
 </head>
 <style>
-    
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(to right, #06486ed3, #092836);
@@ -34,7 +34,7 @@ div{
 
 }
 
-input#input{
+input{
     padding: 15px;
     border: none;
     outline: none;
