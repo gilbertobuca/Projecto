@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Biblioteca Virtual - Comunicação Social</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<style>
+		body {
+			background: linear-gradient(135deg, #141e30, #243b55);
+			color: #fff;
+			font-family: Arial, sans-serif;
+			overflow-x: hidden;
+		}
+		header#header, footer#footer {
+			background: rgba(0, 0, 0, 0.4);
+			border-radius: 0 0 15px 15px;
+			padding: 15px;
+			margin-bottom: 20px;
+			animation: fadeInDown 1s;
+		}
+		#banner .content header h2 {
+			font-size: 2.5em;
+			animation: fadeInDown 1s;
+		}
+		#searchInput {
+			width: 80%;
+			padding: 12px;
+			border-radius: 25px;
+			border: none;
+			margin: 20px auto;
+			font-size: 1.1em;
+			box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+			display: block;
+			animation: fadeInUp 1s ease-in-out;
+		}
+		.book-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+			gap: 30px;
+			margin: 40px;
+			animation: fadeIn 1.5s ease-in;
+		}
+		.book-card {
+			background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+			border-radius: 20px;
+			padding: 20px;
+			text-align: center;
+			transition: transform 0.3s, box-shadow 0.3s;
+			box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+			animation: popIn 0.8s ease forwards;
+			opacity: 0;
+			transform: translateY(30px);
+		}
+		.book-card:hover {
+			transform: scale(1.05) rotate(1deg);
+			box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+		}
+		.book-card img {
+			max-width: 100%;
+			border-radius: 15px;
+			margin-bottom: 15px;
+			transition: transform 0.3s;
+		}
+		.book-card img:hover {
+			transform: scale(1.1);
+		}
+		.book-card h3 {
+			margin: 10px 0;
+			font-size: 1.4em;
+			animation: fadeInUp 1.2s ease;
+		}
+		@keyframes fadeInDown {
+			from { opacity: 0; transform: translateY(-20px); }
+			to { opacity: 1; transform: translateY(0); }
+		}
+		@keyframes fadeInUp {
+			from { opacity: 0; transform: translateY(30px); }
+			to { opacity: 1; transform: translateY(0); }
+		}
+		@keyframes fadeIn {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		}
+		@keyframes popIn {
+			0% { opacity: 0; transform: scale(0.9) translateY(30px); }
+			100% { opacity: 1; transform: scale(1) translateY(0); }
+		}
+	</style>
+</head>
+<body>
+	<header id="header">
+		<h1 id="logo"><a href="Principal.html">Biblioteca Virtual</a></h1>
+		<nav id="nav">
+			<ul>
+				<li><a href="Livros.html">Livros</a></li>
+				<li><a href="Principal.html" class="button primary">Home</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="banner">
+		<div class="content">
+			<header>
+				<h2>Explore todos os livros incríveis desta categoria!</h2>
+				<p>Pesquise, descubra e expanda seu conhecimento com materiais de alta qualidade e de fácil acesso.</p>
+			</header>
+			<input type="text" id="searchInput" placeholder="Pesquisar livros..." onkeyup="pesquisarLivros()">
+			<div id="bookContainer" class="book-container">
+				<!-- Cards de livros gerados dinamicamente -->
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<ul class="icons">
+			<li><a href="https://m.facebook.com" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+			<li><a href="https://www.linkedin.com" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+			<li><a href="https://www.instagram.com" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="https://github.com/#hero" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+		</ul>
+		<ul class="copyright">
+			<li>&copy; Biblioteca Virtual. Todos os direitos reservados.</li>
+		</ul>
+	</footer>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/scriptcomu.js"></script>
+</body>
+</html>
