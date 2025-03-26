@@ -55,7 +55,7 @@ input#button{
     
 }
 
-input#button :hover{
+input#button:hover{
     background-color: #60afff;
     cursor: pointer;
     transition: all 0.6s;
