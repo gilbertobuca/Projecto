@@ -43,13 +43,17 @@
 			margin: 0 auto 50px auto;
 			animation: fadeInUp 1s;
 		}
-		.book-container {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		.carousel {
+			display: flex;
+			overflow-x: auto;
+			scroll-snap-type: x mandatory;
 			gap: 30px;
 			padding: 50px;
+			scroll-behavior: smooth;
 		}
 		.book-card {
+			min-width: 250px;
+			scroll-snap-align: start;
 			background: rgba(255, 255, 255, 0.2);
 			border-radius: 25px;
 			padding: 25px;
@@ -58,6 +62,7 @@
 			box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
 			position: relative;
 			backdrop-filter: blur(8px);
+			cursor: grab;
 		}
 		.book-card:hover {
 			transform: scale(1.12) rotate(-1deg);
@@ -118,18 +123,28 @@
 		<div class="content">
 			<header>
 				<h2>Descubra o melhor da Comunicação Social!</h2>
-				<p>Navegue por conteúdos incríveis, com estilo moderno e envolvente, feitos para impressionar.</p>
+				<p>Role para o lado e encontre conteúdos incríveis com um visual moderno e animações de cair o queixo!</p>
 			</header>
 			<input type="text" id="searchInput" placeholder="Pesquisar livros..." onkeyup="pesquisarLivros()">
-			<div id="bookContainer" class="book-container">
-				<!-- Exemplo de boost estiloso: -->
+			<div class="carousel" id="bookContainer">
 				<div class="book-card">
 					<span class="badge">🔥 Em destaque</span>
-					<img src="images/exemplo.jpg" alt="Capa do Livro Exemplo">
+					<img src="images/exemplo1.jpg" alt="Livro 1">
 					<h3>Comunicação Eficaz</h3>
-					<p>Descubra técnicas para melhorar sua comunicação pessoal e profissional, com design irresistível.</p>
+					<p>Aprenda a dominar a arte da comunicação em qualquer ambiente.</p>
 				</div>
-				<!-- Mais livros dinâmicos aqui -->
+				<div class="book-card">
+					<span class="badge">✨ Bestseller</span>
+					<img src="images/exemplo2.jpg" alt="Livro 2">
+					<h3>Influência Digital</h3>
+					<p>Como crescer e criar impacto nas redes sociais.</p>
+				</div>
+				<div class="book-card">
+					<span class="badge">🌟 Recomendado</span>
+					<img src="images/exemplo3.jpg" alt="Livro 3">
+					<h3>Storytelling Master</h3>
+					<p>Desperte emoções e conquiste audiências contando boas histórias.</p>
+				</div>
 			</div>
 		</div>
 	</section>
