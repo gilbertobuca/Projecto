@@ -1,4 +1,7 @@
 <?php
+
+include_once('config.php');
+
 if(isset($_POST['submit']))
 {
     //print_r('Nome: ' . $_POST['nome']);
@@ -17,8 +20,6 @@ if(isset($_POST['submit']))
     //print_r($_POST['<br>']);
     //print_r('Chave de acesso: ' . $_POST['password']);
     //print_r($_POST['<br>']);
-
-    include_once('config.php');
 
     $nome = $_POST['nome'];
     $sobrenome = $_POST['sobrenome'];
@@ -39,11 +40,11 @@ if(isset($_POST['submit']))
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <link rel="stylesheet" href="assets/css/formulário.css" />
+    <link rel="stylesheet" href="assets/css/formulario.css" />
 </head>
 <body>
     <div class="box">
-        <form action="formulario.php" method="POST">
+        <form action="Principal.php" method="POST">
 
             <fieldset>
                 <legend><b>Cadastre-se</b></legend>
@@ -71,6 +72,12 @@ if(isset($_POST['submit']))
                     <input  id="Numero" type="tel" name="numero" class="inputuser" required>
                     <label for="Numero" class="labelinput">Número de telefone</label>
                 </div>
+                <br><br>
+                
+                <div class="inputbox">
+                    <input  id="Password" type="password" name="password" class="inputuser" required>
+                    <label for="Password" class="labelinput">Chave de acesso</label>
+                </div>
 
                 <h4>Gênero: </h4>
                 <input type="radio" name="genero" id="masculino" value="masculino" required>
@@ -92,11 +99,6 @@ if(isset($_POST['submit']))
                 </div>
                 <br><br>
 
-                <div class="inputbox">
-                    <input  id="Password" type="password" name="password" class="inputuser" required>
-                    <label for="Password" class="labelinput">Chave de acesso</label>
-                </div>
-                <br><br>
                 
                 <input type="submit" name="submit" id="submit">
 
