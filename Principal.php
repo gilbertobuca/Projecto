@@ -49,7 +49,7 @@
 								</ul>
 							</li>
 							<li><a href="contactos.html">Contactos</a></li>
-							<li><a href="index.html" class="button primary">Terminar Secção</a></li>
+							<li><a href="sair.php" class="button primary">Terminar Secção</a></li>
 						</ul>
 					</nav>
 				</header>

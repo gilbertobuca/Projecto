@@ -35,7 +35,7 @@ if(isset($_POST['submit']) && !empty($_POST['email'])  && !empty($_POST['senha']
         //print_r('Existe o aluno');
         $_SESSION['email'] = $email;
         $_SESSION['senha'] = $senha;
-        header('Location: Principal.html');
+        header('Location: Principal.php');
 
 
     }
