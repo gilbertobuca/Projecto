@@ -43,7 +43,7 @@ if(isset($_POST['submit']))
 </head>
 <body>
     <div class="box">
-        <form action="testlogin.php" method="POST">
+        <form action="formulario.php" method="POST">
 
             <fieldset>
                 <legend><b>Cadastre-se</b></legend>
