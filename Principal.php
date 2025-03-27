@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	print_r($_SESSION);
+	//print_r($_SESSION);
 	
 	if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)){
 		unset($_SESSION['email']);
@@ -25,10 +25,10 @@
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="Principal.html">Biblioteca Virtual</a></h1>
+					<h1 id="logo"><a href="Principal.php">Biblioteca Virtual</a></h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="Principal.html">Home</a></li>
+							<li><a href="Principal.php">Home</a></li>
 							<li>
 								<a href="Livros.html">Livros</a>
 								<ul>
