@@ -1,0 +1,14 @@
+/* Estilos para o modo claro (padrão) */
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos para o modo escuro */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+

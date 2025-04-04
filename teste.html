@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modo Claro/Escuro</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            transition: background-color 0.3s, color 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Modo Claro / Escuro</h1>
+    <button id="toggle-mode">Alternar Modo</button>
+    
+    <script>
+        const toggleButton = document.getElementById("toggle-mode");
+        const body = document.body;
+
+        // Verifica o modo salvo no localStorage
+        if (localStorage.getItem("theme") === "dark") {
+            body.classList.add("dark-mode");
+        }
+
+        toggleButton.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+
+            // Salva a preferência no localStorage
+            if (body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+            } else {
+                localStorage.setItem("theme", "light");
+            }
+        });
+    </script>
+</body>
+</html>
