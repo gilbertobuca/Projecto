@@ -39,12 +39,12 @@ if(isset($_POST['submit']))
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Formulário de cadastro</title>
     <link rel="stylesheet" href="assets/css/formulario.css" />
 </head>
 <body>
     <div class="box">
-        <form id="form" action="formulario.php" method="POST">
+        <form id="form" action="formulario.php, form.php" method="POST">
 
             <fieldset>
                 <legend><b>Cadastre-se</b></legend>
@@ -81,10 +81,10 @@ if(isset($_POST['submit']))
 
                 <h4>Gênero: </h4>
                 <input type="radio" name="genero" id="masculino" value="masculino" required>
-                <label for="male">Masculino</label>
+                <label for="masculino">Masculino</label>
                 <br><br>
-                <input type="radio" name="genero" id="femenino" value="femenino" required>
-                <label for="female">Feminino</label>
+                <input type="radio" name="genero" id="feminino" value="femenino" required>
+                <label for="feminino">Feminino</label>
                 <br><br><br>
 
                 <div class="inputbox">
