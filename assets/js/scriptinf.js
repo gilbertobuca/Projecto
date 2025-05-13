@@ -1,19 +1,34 @@
 // Dados dos livros (exemplo)
 const livros = [
     {
-        titulo: 'Tecnologias de programação',
+        titulo: 'algoritmo e visual G',
         imagem: 'images/21licoes.jpeg',
-        arquivo: 'https://www.google.co.ao/books/edition/T%C3%A9cnicas_de_Programa%C3%A7%C3%A3o_Uma_Abordagem/H8A0lZtqaXsC?hl=pt-PT&gbpv=1'
+        arquivo: 'assets/livros/algoritmo e visuallg.pdf'
     },
     {
-        titulo: 'Redes de computadores e a internet',
-        imagem: 'images/sapiens.jpg',
-        arquivo: 'https://www.google.co.ao/books/edition/Redes_de_computadores_e_a_Internet_coedi/DtFJEAAAQBAJ?hl=pt-PT&gbpv=1&dq=redes+de+computador&printsec=frontcoverassets/livros/sapiens.pdf'
+        titulo: 'Apostila de hardware',
+        imagem: 'images/21licoes.jpeg',
+        arquivo: 'assets/livros/apostila-de-hardware.pdf'
+    },
+    {
+        titulo: 'Arquitetura dos computadores',
+        imagem: 'images/21licoes.jpeg',
+        arquivo: 'assets/livros/arquitetura_computadores.pdf'
     },
     {
         titulo: 'Efetividade das tecnologias de informação',
-        imagem: 'images/pai.jpeg',
+        imagem: 'images/21licoes.jpeg',
         arquivo: 'https://www.google.co.ao/books/edition/Efetividade_das_tecnologias_da_informa%C3%A7/u_IxEAAAQBAJ?hl=pt-PT&gbpv=1&dq=tecnologia+de+informa%C3%A7%C3%A3o+e+comunica%C3%A7%C3%A3o+portugues&pg=PA25&printsec=frontcover'
+    },
+    {
+        titulo: 'Hardware e software',
+        imagem: 'images/21licoes.jpeg',
+        arquivo: 'assets/livros/hardwareesoftware.pdf'
+    },
+    {
+        titulo: 'Efetividade das tecnologias de informação',
+        imagem: 'images/21licoes.jpeg',
+        arquivo: 'assets/livros/livro-programacao-para-iniciantes.pdf'
     }
 ];
 

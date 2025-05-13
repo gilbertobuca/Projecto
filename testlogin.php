@@ -23,11 +23,13 @@ if(isset($_POST['submit']) && !empty($_POST['email'])  && !empty($_POST['senha']
     //print_r($result);
 
     if(mysqli_num_rows($result) < 1){
-        //print_r('<br>');
-        //print_r('Não Existe um aluno com esses atributos');
+        print_r('<br>');
+        print_r('Credenciais não encontradas em nossa base de dados. Por favor, insira dados válidos');
         unset( $_SESSION['email']);
         unset( $_SESSION['senha']);
         header('Location: form.php');
+        print_r('<br>');
+        print_r('Credenciais não encontradas em nossa base de dados. Por favor, insira dados válidos');
 
     }
     else{
@@ -36,6 +38,8 @@ if(isset($_POST['submit']) && !empty($_POST['email'])  && !empty($_POST['senha']
         $_SESSION['email'] = $email;
         $_SESSION['senha'] = $senha;
         header('Location: Principal.php');
+        print_r('<br>');
+        print_r('Bem vindo ' . $email);
 
 
     }

@@ -14,7 +14,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Biblioteca Virtual</title>
+		<title>Biblioteca Virtual | Principal</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -36,6 +36,8 @@
 									<li>
 										<a href="#">Categorias</a>
 										<ul>
+											<li><a href="cej.html">Ciências economico-jurídaicas</a></li>
+											<li><a href="cfb.html">Ciências físicas e biolólicas</a></li>
 											<li><a href="comunicacao.html">Comunicação Social</a></li>
 											<li><a href="contabilidade.html">Contabilidade e gestão</a></li>
 											<li><a href="desenho.html">Desenho e Projecto</a></li>
@@ -43,12 +45,12 @@
 											<li><a href="eletronica.html">Eletronica e telecomunicações</a></li>
 											<li><a href="filosofia.html">Filosofia</a></li>
 											<li><a href="informatica.html">Informática</a></li>
-											<li><a href="literatura.html">literatura</a></li>
+											<li><a href="literatura.html">Literatura</a></li>
 										</ul>
 									</li>
 								</ul>
 							</li>
-							<li><a href="contactos.html">Contactos</a></li>
+							<li><a href="contactos.php">Contactos</a></li>
 							<li><a href="sair.php" class="button primary">Terminar Secção</a></li>
 						</ul>
 					</nav>
@@ -115,7 +117,7 @@
 						</div>
 						<footer class="major">
 							<ul class="actions special">
-								<li><a href="contactos.html" class="button">Contacte-nos</a></li>
+								<li><a href="contactos.php" class="button">Contacte-nos</a></li>
 							</ul>
 						</footer>
 					</div>

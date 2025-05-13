@@ -8,7 +8,7 @@ const livros = [
     { id: 6, titulo: "Cem Anos de Solidão", autor: "Gabriel García Márquez", genero: "Realismo Mágico", url: "https://example.com/cem-anos.pdf" }
 
 ];
-
+  
 // Função para exibir os livros na página
 function exibirLivros(livrosFiltrados) {
     const bookList = document.getElementById("bookList");

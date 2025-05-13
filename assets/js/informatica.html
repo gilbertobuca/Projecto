@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<title>Biblioteca Virtual - Informática</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<style>
+		body {
+			background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+			color: #fff;
+			font-family: 'Helvetica Neue', sans-serif;
+			margin: 0;
+			overflow-x: hidden;
+		}
+		header#header, footer#footer {
+			background: rgba(0, 0, 0, 0.7);
+			border-radius: 0 0 25px 25px;
+			padding: 25px;
+			animation: slideDown 1s ease;
+			box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+		}
+		#banner .content header h2 {
+			font-size: 3.2em;
+			animation: fadeInDown 1s; 
+			margin-bottom: 15px;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+		}
+		#banner .content p {
+			font-size: 1.5em;
+			margin-bottom: 40px;
+			color: #f0f0f0;
+		}
+		#searchInput {
+			width: 65%;
+			padding: 16px;
+			border-radius: 40px;
+			border: none;
+			font-size: 1.3em;
+			box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+			display: block;
+			margin: 0 auto 50px auto;
+			animation: fadeInUp 1s;
+		}
+		.carousel {
+			display: flex;
+			overflow-x: auto;
+			scroll-snap-type: x mandatory;
+			gap: 30px;
+			padding: 50px;
+			scroll-behavior: smooth;
+		}
+		.book-card {
+			min-width: 250px;
+			scroll-snap-align: start;
+			background: rgba(255, 255, 255, 0.2);
+			border-radius: 25px;
+			padding: 25px;
+			text-align: center;
+			transition: 0.4s;
+			box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+			position: relative;
+			backdrop-filter: blur(8px);
+			cursor: grab;
+		}
+		.book-card:hover {
+			transform: scale(1.12) rotate(-1deg);
+			box-shadow: 0 0 60px rgba(255, 255, 255, 0.4);
+		}
+		.book-card img {
+			width: 100%;
+			height: auto;
+			border-radius: 18px;
+			margin-bottom: 18px;
+			transition: transform 0.4s;
+			box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+		}
+		.book-card img:hover {
+			transform: scale(1.15);
+		}
+		.book-card h3 {
+			font-size: 1.6em;
+			margin-bottom: 12px;
+			font-weight: bold;
+			color: #ffe57f;
+		}
+		.book-card p {
+			font-size: 1.1em;
+			color: #fafafa;
+		}
+		.book-card .badge {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			background: linear-gradient(45deg, #fdbb2d, #ff8c00);
+			color: #000;
+			padding: 6px 12px;
+			border-radius: 15px;
+			font-weight: bold;
+			font-size: 0.95em;
+			animation: popBadge 0.5s ease forwards;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		}
+		.nav-buttons {
+			text-align: center;
+			margin-top: 20px;
+		}
+		.nav-buttons button {
+			background: linear-gradient(135deg, #ff8c00, #fdbb2d);
+			border: none;
+			padding: 10px 20px;
+			margin: 0 10px;
+			border-radius: 30px;
+			cursor: pointer;
+			color: #000;
+			font-weight: bold;
+			box-shadow: 0 0 15px rgba(0,0,0,0.2);
+			transition: transform 0.2s;
+		}
+		.nav-buttons button:hover {
+			transform: scale(1.1);
+		}
+		@keyframes slideDown { from { transform: translateY(-100px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+		@keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+		@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+		@keyframes popBadge { from { transform: scale(0); } to { transform: scale(1); } }
+	</style>
+</head>
+<body>
+	<header id="header">
+		<h1 id="logo"><a href="Principal.php">Biblioteca Virtual</a></h1>
+		<nav id="nav">
+			<ul>
+				<li><a href="Livros.html">Livros</a>
+					<ul>
+						<li><a></a></li>
+						<li>
+							<a href="#">Categorias</a>
+							<ul>
+								<li><a href="cej.html">Ciências economico-jurídaicas</a></li>
+								<li><a href="cfb.html">Ciências físicas e biolólicas</a></li>
+								<li><a href="comunicacao.html">Comunicação Social</a></li>
+								<li><a href="contabilidade.html">Contabilidade e gestão</a></li>
+								<li><a href="desenho.html">Desenho e Projecto</a></li>
+								<li><a href="electricidade.html">Energia e instalações electricas</a></li>
+								<li><a href="eletronica.html">Eletronica e telecomunicações</a></li>
+								<li><a href="filosofia.html">Filosofia</a></li>
+								<li><a href="informatica.html">Informática</a></li>
+								<li><a href="literatura.html">literatura</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="Principal.php" class="button primary">Home</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="banner">
+		<div class="content">
+			<header>
+				<h2>Descubra o melhor da Informática!</h2>
+				<p>Role para o lado e encontre conteúdos incríveis com um visual moderno e animações de cair o queixo!</p>
+			</header>
+			<input type="text" id="searchInput" placeholder="Pesquisar livros..." onkeyup="pesquisarLivros()">
+			<div class="nav-buttons">
+				<button onclick="scrollCarousel(-1)">⬅️ Anterior</button>
+				<button onclick="scrollCarousel(1)">Próximo ➡️</button>
+			</div>
+			<div class="carousel" id="bookContainer">
+				<div class="book-card">
+					<span class="badge">🔥 Em destaque</span>
+					<img src="images/exemplo1.jpg" alt="Livro 1">
+					<h3>Comunicação Eficaz</h3>
+					<p>Aprenda a dominar a arte da comunicação em qualquer ambiente.</p>
+				</div>
+				<div class="book-card">
+					<span class="badge">✨ Bestseller</span>
+					<img src="images/exemplo2.jpg" alt="Livro 2">
+					<h3>Influência Digital</h3>
+					<p>Como crescer e criar impacto nas redes sociais.</p>
+				</div>
+				<div class="book-card">
+					<span class="badge">🌟 Recomendado</span>
+					<img src="images/exemplo3.jpg" alt="Livro 3">
+					<h3>Storytelling Master</h3>
+					<p>Desperte emoções e conquiste audiências contando boas histórias.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<ul class="icons">
+			<li><a href="https://facebook.com" class="icon brands fa-facebook-f"></a></li>
+			<li><a href="https://linkedin.com" class="icon brands fa-linkedin-in"></a></li>
+			<li><a href="https://instagram.com" class="icon brands fa-instagram"></a></li>
+			<li><a href="https://github.com" class="icon brands fa-github"></a></li>
+		</ul>
+		<ul class="copyright">
+			<li>&copy; Biblioteca Virtual. Todos os direitos reservados.</li>
+		</ul>
+	</footer>
+
+	<script>
+		function scrollCarousel(direction) {
+			const container = document.getElementById('bookContainer');
+			const scrollAmount = 300 * direction;
+			container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+		}
+	</script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/scriptinf.js"></script>
+</body>
+</html>

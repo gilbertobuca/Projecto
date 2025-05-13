@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
-<html lang="pt">
+<html lang="pt-br">
 <head>
-	<title>Biblioteca Virtual - Comunicação Social</title>
+	<title>Biblioteca Virtual - Informática</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -23,7 +23,7 @@
 		}
 		#banner .content header h2 {
 			font-size: 3.2em;
-			animation: fadeInDown 1s;
+			animation: fadeInDown 1s; 
 			margin-bottom: 15px;
 			text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
 		}
@@ -132,7 +132,26 @@
 		<h1 id="logo"><a href="Principal.php">Biblioteca Virtual</a></h1>
 		<nav id="nav">
 			<ul>
-				<li><a href="Livros.html">Livros</a></li>
+				<li><a href="Livros.html">Livros</a>
+					<ul>
+						<li><a></a></li>
+						<li>
+							<a href="#">Categorias</a>
+							<ul>
+								<li><a href="cej.html">Ciências economico-jurídaicas</a></li>
+								<li><a href="cfb.html">Ciências físicas e biolólicas</a></li>
+								<li><a href="comunicacao.html">Comunicação Social</a></li>
+								<li><a href="contabilidade.html">Contabilidade e gestão</a></li>
+								<li><a href="desenho.html">Desenho e Projecto</a></li>
+								<li><a href="electricidade.html">Energia e instalações electricas</a></li>
+								<li><a href="eletronica.html">Eletronica e telecomunicações</a></li>
+								<li><a href="filosofia.html">Filosofia</a></li>
+								<li><a href="informatica.html">Informática</a></li>
+								<li><a href="literatura.html">literatura</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
 				<li><a href="Principal.php" class="button primary">Home</a></li>
 			</ul>
 		</nav>
@@ -184,7 +203,6 @@
 		</ul>
 	</footer>
 
-	<script src="assets/js/jquery.min.js"></script>
 	<script>
 		function scrollCarousel(direction) {
 			const container = document.getElementById('bookContainer');
@@ -192,8 +210,13 @@
 			container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
 		}
 	</script>
-	<script src="assets/js/main.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 	<script src="assets/js/scriptinf.js"></script>
 </body>
 </html>

@@ -44,7 +44,7 @@ if(isset($_POST['submit']))
 </head>
 <body>
     <div class="box">
-        <form id="form" action="formulario.php, form.php" method="POST">
+        <form id="form" action="formulario.php" method="POST">
 
             <fieldset>
                 <legend><b>Cadastre-se</b></legend>
@@ -110,7 +110,7 @@ if(isset($_POST['submit']))
 
 <script>
 function abrirArquivo() {
-    window.open('form.php', '_self'); // Abre em nova aba
+    window.open('form.php', '_self');
 }
 </script>
     
