@@ -2,34 +2,40 @@
 const livros = [
     {
         titulo: 'algoritmo e visual G',
-        imagem: 'images/21licoes.jpeg',
+        imagem: 'images/visual.png',
         arquivo: 'assets/livros/algoritmo e visuallg.pdf'
     },
+
     {
         titulo: 'Apostila de hardware',
-        imagem: 'images/21licoes.jpeg',
+        imagem: 'images/apostila.png',
         arquivo: 'assets/livros/apostila-de-hardware.pdf'
     },
+
     {
         titulo: 'Arquitetura dos computadores',
-        imagem: 'images/21licoes.jpeg',
+        imagem: 'images/arquitetura.png',
         arquivo: 'assets/livros/arquitetura_computadores.pdf'
     },
+
     {
         titulo: 'Efetividade das tecnologias de informação',
         imagem: 'images/21licoes.jpeg',
         arquivo: 'https://www.google.co.ao/books/edition/Efetividade_das_tecnologias_da_informa%C3%A7/u_IxEAAAQBAJ?hl=pt-PT&gbpv=1&dq=tecnologia+de+informa%C3%A7%C3%A3o+e+comunica%C3%A7%C3%A3o+portugues&pg=PA25&printsec=frontcover'
     },
+
     {
         titulo: 'Hardware e software',
-        imagem: 'images/21licoes.jpeg',
+        imagem: 'images/hardware.png',
         arquivo: 'assets/livros/hardwareesoftware.pdf'
     },
+
     {
-        titulo: 'Efetividade das tecnologias de informação',
-        imagem: 'images/21licoes.jpeg',
+        titulo: 'Programação para iniciantes',
+        imagem: 'images/progra.png',
         arquivo: 'assets/livros/livro-programacao-para-iniciantes.pdf'
     }
+
 ];
 
 // Renderiza os livros na tela

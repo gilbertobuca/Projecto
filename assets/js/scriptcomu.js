@@ -11,7 +11,7 @@ const livros = [
         arquivo: 'assets/livros/sapiens.pdf'
     },
     {
-        titulo: 'Pai rico e Pai pobre',
+        titulo: 'Pai rico e Pai pobre', 
         imagem: 'images/pai.jpeg',
         arquivo: 'assets/livros/pai.pdf'
     }
