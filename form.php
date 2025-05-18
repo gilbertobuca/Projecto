@@ -84,6 +84,7 @@ input{
     border: none;
     outline: none;
     font-size: 15px;
+    border-radius: 10px;
 
 }
 
